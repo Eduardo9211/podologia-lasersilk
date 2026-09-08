@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podología Láser & Laser Silk | Pachuca</title>
+    <!-- Vinculación con la hoja de estilos CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado con Logos -->
+    <header class="header">
+        <div class="marcas-header">
+            <a href="#podologia" class="logo-link">
+                <img src="imagenes/logo-podologia.jpeg" alt="Podología Láser" class="logo-img">
+            </a>
+            <div class="separador-header">|</div>
+            <a href="#lasersilk" class="logo-link">
+                <img src="imagenes/logo-lasersilk.jpeg" alt="Laser Silk" class="logo-img">
+            </a>
+        </div>
+        <h1 class="titulo-principal">Podología Láser & Laser Silk</h1>
+        <p class="tagline">Tratamientos especializados con láser • Atendemos con citas programadas</p>
+    </header>
+
+    <main class="contenedor">
+
+        <!-- Banner Publicitario -->
+        <div class="banner-container">
+            <img src="./imagenes/banner.jpeg" alt="Podología Láser y Laser Silk Servicios" class="banner-img">
+        </div>
+
+        <!-- Horarios y Ubicación -->
+        <section class="card-info">
+            <h2>📅 Horarios de Atención</h2>
+            <div class="horarios-grid">
+                <div>
+                    <strong>🦶 Podología Láser (Citas de 30 min):</strong>
+                    <p>Lunes a Viernes: 11:30 am - 3:00 pm  |  6:00 pm - 8:00 pm</p>
+                </div>
+                <div>
+                    <strong>✨ Laser Silk (Citas de 15 min por área):</strong>
+                    <p>Lunes a Viernes: 11:30 am - 3:00 pm  |  6:00 pm - 8:00 pm</p>
+                    <p>Sábados: 11:30 am - 3:00 pm</p>
+                </div>
+            </div>
+            <a href="https://maps.app.goo.gl/m5N7WrZKbF9YYWcr8" target="_blank" class="btn-mapa">
+                🗺️ Ver Ubicación en Google Maps
+            </a>
+        </section>
+
+        <!-- SECCIÓN 1: PODOLOGÍA LÁSER -->
+        <section id="podologia" class="seccion-servicio podologia-border">
+            <div class="encabezado-servicio">
+                <h2 class="titulo-podologia">Podología Láser 👣</h2>
+                <span class="badge-tel">Citas Podología: 771 189 6340</span>
+            </div>
+            <p class="subtitulo">Tratamientos avanzados para la salud de tus pies (Haz clic en uno para agendar):</p>
+
+            <div class="grid-tratamientos">
+                <div class="item-tratamiento" onclick="seleccionarTratamiento('podologia', 'Hongo de Uña')" style="cursor: pointer;">
+                    <span class="icon">🦶</span>
+                    <h3>Hongo de Uña</h3>
+                    <p>Eliminación eficaz con tecnología láser sin dolor.</p>
+                </div>
+                <div class="item-tratamiento" onclick="seleccionarTratamiento('podologia', 'Verrugas & Mezquinos')" style="cursor: pointer;">
+                    <span class="icon">✨</span>
+                    <h3>Verrugas & Mezquinos</h3>
+                    <p>Tratamiento rápido y seguro para cauterización y eliminación.</p>
+                </div>
+                <div class="item-tratamiento" onclick="seleccionarTratamiento('podologia', 'Papiloma Plantar')" style="cursor: pointer;">
+                    <span class="icon">🩺</span>
+                    <h3>Papiloma Plantar</h3>
+                    <p>Atención clínica especializada para la planta del pie.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: LASER SILK -->
+        <section id="lasersilk" class="seccion-servicio lasersilk-border">
+            <div class="encabezado-servicio">
+                <h2 class="titulo-lasersilk">Laser Silk ✨</h2>
+                <span class="badge-tel rosa">Citas Laser Silk: 771 678 2484</span>
+            </div>
+            <p class="subtitulo">Depilación definitiva corporal y eliminación de tatuajes</p>
+
+            <!-- Precios Depilación -->
+            <h3 class="subtitulo-precios">Depilación Definitiva (Zonas y Paquetes - Haz clic para agendar)</h3>
+            <div class="precios-grid">
+                <div class="precio-card" onclick="seleccionarTratamiento('lasersilk', '1 Área ($200.00)')" style="cursor: pointer;">
+                    <h3>1 Área</h3>
+                    <p class="monto">$200.00</p>
+                    <span>Por zona individual</span>
+                </div>
+                <div class="precio-card destacado" onclick="seleccionarTratamiento('lasersilk', 'Paquete 3 Áreas ($550.00)')" style="cursor: pointer;">
+                    <span class="badge">Popular</span>
+                    <h3>Paquete 3 Áreas</h3>
+                    <p class="monto">$550.00</p>
+                    <span>Combina 3 zonas</span>
+                </div>
+                <div class="precio-card" onclick="seleccionarTratamiento('lasersilk', 'Paquete 5 Áreas ($900.00)')" style="cursor: pointer;">
+                    <h3>Paquete 5 Áreas</h3>
+                    <p class="monto">$900.00</p>
+                    <span>Combina 5 zonas</span>
+                </div>
+                <div class="precio-card paquete-top" onclick="seleccionarTratamiento('lasersilk', 'Cuerpo Completo ($1,850.00)')" style="cursor: pointer;">
+                    <h3>Cuerpo Completo</h3>
+                    <p class="monto">$1,850.00</p>
+                    <span>Cobertura total 🤸🏻‍♀️</span>
+                </div>
+            </div>
+
+            <!-- Servicio Tatuajes -->
+            <div class="card-tatuaje" onclick="seleccionarTratamiento('lasersilk', 'Eliminación de Tatuajes')" style="cursor: pointer;">
+                🎨 <strong>Servicio Especial:</strong> Eliminación de Tatuajes con Láser (Haz clic aquí para agendar).
+            </div>
+
+            <!-- Listado de Zonas -->
+            <div class="zonas-contenedor">
+                <h3>Zonas disponibles para depilación: 💃🕺</h3>
+                <ul class="lista-zonas">
+                    <li>Axila</li>
+                    <li>Bikini</li>
+                    <li>Pierna Baja</li>
+                    <li>Pierna Alta</li>
+                    <li>Abdomen</li>
+                    <li>Rostro</li>
+                    <li>Brazo Completo</li>
+                    <li>Busto</li>
+                    <li>Pies</li>
+                    <li>Espalda</li>
+                    <li>Glúteos</li>
+                    <li>Manos</li>
+                    <li>Orejas</li>
+                    <li>Patillas</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- AGENDAMIENTO DE CITA -->
+        <section class="seccion-cita">
+            <h2>🗓️ Solicita tu Cita</h2>
+            <p>Selecciona el servicio y el horario deseado. El sistema te indicará la duración aproximada de tu atención:</p>
+
+            <form id="formCita" class="formulario-cita">
+                <div class="grupo-campo">
+                    <label for="servicioSelect">Especialidad / Área:</label>
+                    <select id="servicioSelect" onchange="actualizarAvisoDuracion()">
+                        <option value="podologia">Podología Láser (Lun-Vie | 30 min por consulta)</option>
+                        <option value="lasersilk">Laser Silk: Depilación / Tatuajes (Lun-Sáb | 15 min por área)</option>
+                    </select>
+                </div>
+
+                <!-- Campo dinámico para paquete o servicio elegido -->
+                <div class="grupo-campo">
+                    <label for="tratamientoElegido">Servicio o Paquete Seleccionado:</label>
+                    <input type="text" id="tratamientoElegido" placeholder="Consulta General / Ninguno seleccionado" readonly style="background-color: #f1f5f9; font-weight: bold; color: #1e293b;">
+                </div>
+
+                <!-- Indicador visual de duración -->
+                <div id="avisoDuracion" style="background: #e0f2fe; padding: 10px; border-radius: 6px; font-weight: 600; color: #0369a1;">
+                    ⏱️ Tiempo estimado de atención: 30 minutos por paciente.
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" placeholder="Ej. Ana García" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="fechaHora">Día y Hora deseada:</label>
+                    <input type="datetime-local" id="fechaHora" step="900" onchange="validarHorarioAtencion()" required>
+                </div>
+
+                <button type="button" onclick="enviarWhatsApp()" class="btn-whatsapp">
+                    📱 Enviar Solicitud por WhatsApp
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Podología Láser & Laser Silk - Profra Angela Barrientos 103-A, Centro, 42000 Pachuca de Soto, Hgo.</p>
+    </footer>
+
+    <script>
+    function seleccionarTratamiento(servicio, nombreTratamiento) {
+        // 1. Cambiar la opción del selector
+        const selectServicio = document.getElementById('servicioSelect');
+        selectServicio.value = servicio;
+        actualizarAvisoDuracion();
+
+        // 2. Colocar el tratamiento elegido en el campo del formulario
+        document.getElementById('tratamientoElegido').value = nombreTratamiento;
+
+        // 3. Bajar suavemente hasta el formulario de citas
+        document.querySelector('.seccion-cita').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function actualizarAvisoDuracion() {
+        const servicio = document.getElementById('servicioSelect').value;
+        const aviso = document.getElementById('avisoDuracion');
+        const inputFecha = document.getElementById('fechaHora');
+        
+        if (servicio === 'podologia') {
+            aviso.innerHTML = '⏱️ **Podología:** Citas de 30 min (Lun-Vie: 11:30 am - 3:00 pm y 6:00 pm - 8:00 pm)';
+            aviso.style.background = '#e0f2fe';
+            aviso.style.color = '#0369a1';
+            inputFecha.step = "1800"; // Intervalos de 30 minutos
+        } else {
+            aviso.innerHTML = '⏱️ **Laser Silk:** Citas de 15 min (Lun-Vie: 11:30 am - 3:00 pm / 6:00 pm - 8:00 pm | Sáb: 11:30 am - 3:00 pm)';
+            aviso.style.background = '#fdf2f8';
+            aviso.style.color = '#9d174d';
+            inputFecha.step = "900"; // Intervalos de 15 minutos
+        }
+
+        if (inputFecha.value) {
+            validarHorarioAtencion();
+        }
+    }
+
+    function validarHorarioAtencion() {
+        const servicioTipo = document.getElementById('servicioSelect').value;
+        const inputFecha = document.getElementById('fechaHora');
+        
+        if (!inputFecha.value) return;
+
+        const fechaObj = new Date(inputFecha.value);
+        const diaSemana = fechaObj.getDay(); // 0: Dom, 1: Lun, ..., 5: Vie, 6: Sáb
+        const horas = fechaObj.getHours();
+        const minutos = fechaObj.getMinutes();
+        const tiempoEnMinutos = horas * 60 + minutos;
+
+        const inicioTurno1 = 11 * 60 + 30; // 11:30 AM
+        const finTurno1    = 15 * 60;      // 03:00 PM
+        const inicioTurno2 = 18 * 60;      // 06:00 PM
+        const finTurno2    = 20 * 60;      // 08:00 PM
+
+        if (diaSemana === 0) {
+            alert('🚫 La clínica permanece cerrada los domingos. Por favor elige otro día.');
+            inputFecha.value = '';
+            return;
+        }
+
+        if (diaSemana === 6) {
+            if (servicioTipo === 'podologia') {
+                alert('🚫 Podología Láser únicamente atiende de Lunes a Viernes. Por favor selecciona un día hábil.');
+                inputFecha.value = '';
+                return;
+            } else {
+                if (tiempoEnMinutos < inicioTurno1 || tiempoEnMinutos > finTurno1) {
+                    alert('⏰ El horario de atención para Laser Silk los sábados es de 11:30 am a 3:00 pm.');
+                    inputFecha.value = '';
+                    return;
+                }
+            }
+        }
+
+        if (diaSemana >= 1 && diaSemana <= 5) {
+            const enTurno1 = tiempoEnMinutos >= inicioTurno1 && tiempoEnMinutos <= finTurno1;
+            const enTurno2 = tiempoEnMinutos >= inicioTurno2 && tiempoEnMinutos <= finTurno2;
+
+            if (!enTurno1 && !enTurno2) {
+                alert('⏰ Por favor selecciona una hora dentro de nuestros horarios de atención:\n\n' +
+                      '• Mañana: 11:30 am a 3:00 pm\n' +
+                      '• Tarde: 6:00 pm a 8:00 pm');
+                inputFecha.value = '';
+                return;
+            }
+        }
+    }
+
+    function enviarWhatsApp() {
+        const servicioTipo = document.getElementById('servicioSelect').value;
+        const tratamientoDetalle = document.getElementById('tratamientoElegido').value || "Consulta General";
+        const nombre = document.getElementById('nombre').value;
+        const correo = document.getElementById('correo').value;
+        const fechaHoraRaw = document.getElementById('fechaHora').value;
+
+        if(!nombre || !correo || !fechaHoraRaw) {
+            alert('Por favor completa todos los campos para agendar tu cita.');
+            return;
+        }
+
+        const fechaObj = new Date(fechaHoraRaw);
+        const fechaFormateada = fechaObj.toLocaleString('es-MX', { 
+            dateStyle: 'full', 
+            timeStyle: 'short' 
+        });
+
+        let numeroTelefono = "";
+        let nombreEspecialidad = "";
+        let duracionInfo = "";
+
+        if(servicioTipo === 'podologia') {
+            numeroTelefono = "527711896340";
+            nombreEspecialidad = "Podología Láser";
+            duracionInfo = "30 minutos";
+        } else {
+            numeroTelefono = "527716782484"; 
+            nombreEspecialidad = "Laser Silk (Depilación / Tatuajes)";
+            duracionInfo = "15 min por área";
+        }
+
+        const mensaje = `Hola, me gustaría agendar una cita para *${nombreEspecialidad}*.%0A%0A` +
+                        `• *Servicio / Paquete:* ${encodeURIComponent(tratamientoDetalle)}%0A` +
+                        `• *Nombre:* ${encodeURIComponent(nombre)}%0A` +
+                        `• *Correo:* ${encodeURIComponent(correo)}%0A` +
+                        `• *Fecha y Hora solicitada:* ${encodeURIComponent(fechaFormateada)}%0A` +
+                        `• *Duración estimada:* ${encodeURIComponent(duracionInfo)}%0A%0A` +
+                        `Quedo a la espera de su confirmación de disponibilidad.`;
+
+        window.open(`https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${mensaje}`, '_blank');
+    }
+    </script>
+</body>
+</html>
